@@ -1,0 +1,19 @@
+<div ng-controller="sportViewCtrl as sportview" ng-init="sportview.getInitSport()">
+    <h1>Sport View</h1>
+    <table>
+        <thead>
+        <tr>
+            <td>team</td>
+            <td>coach</td>
+            <td>kitColor</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{sportview.team.fav}}</td>
+            <td>{{sportview.team.coach}}</td>
+            <td>{{sportview.team.kitColor}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

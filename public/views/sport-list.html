@@ -1,0 +1,20 @@
+<div ng-controller="sportCtrl as sctrl" ng-init="sctrl.initSport()">
+    <h1>Favorite Sports Teams</h1>
+    <table ng-show="sctrl.sports.length">
+        <thead>
+        <tr>
+            <th>team</th>
+            <th>coach</th>
+            <th>kitColor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="fan in sctrl.sports track by $index">
+            <td><a ui-sref="teamDetails({team: fan.fav,id: fan._id})">{{fan.fav}}</a></td>
+            <td>{{fan.coach}}</td>
+            <td ng-if="Array.isArray(fan.kitColor)">{{fan.kitColor[0]}}</td>
+            <td ng-if="!(Array.isArray(fan.kitColor))">{{fan.kitColor}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

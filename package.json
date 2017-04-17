@@ -1,0 +1,26 @@
+{
+  "name": "mean_stack",
+  "version": "1.0.0",
+  "description": "testing mean stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "express",
+    "node",
+    "mongo"
+  ],
+  "author": "chris",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-resource": "^1.6.4",
+    "angular-ui-router": "^0.4.2",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.25",
+    "pug": "^2.0.0-beta11"
+  }
+}

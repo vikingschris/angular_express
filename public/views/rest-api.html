@@ -1,0 +1,20 @@
+<div ng-controller="apiCtrl as rest">
+    <h1>hello api test</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>team</th>
+                <th>coach</th>
+                <th>kitColor</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td ng-bind="rest.api.fav"></td>
+            <td ng-bind="rest.api.coach"></td>
+            <td ng-show="rest.isArray(rest.api.kitColor)">{{rest.api.kitColor[0]}} {{rest.api.kitColor[1]}}</td>
+            <td ng-show="!(rest.isArray(rest.api.kitColor))">{{rest.api.kitColor}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
